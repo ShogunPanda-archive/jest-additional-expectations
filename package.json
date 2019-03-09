@@ -27,8 +27,7 @@
   },
   "homepage": "https://github.com/cowtech/cera",
   "dependencies": {
-    "jest": "^24.1.0",
-    "jest-extended": "^0.11.1"
+    "jest": "^24.1.0"
   },
   "devDependencies": {
     "@cowtech/tslint-config": "^5.12.4",

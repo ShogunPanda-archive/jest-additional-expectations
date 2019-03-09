@@ -1,19 +1,12 @@
-/// <reference types="jest" />
-
-import { toBeJSON, toBeText, toHaveHTTPStatus } from './matchers'
+import { toBeArray, toBeEmpty, toBeObject } from './general'
+import { toBeJSON, toBeText, toHaveHTTPStatus } from './http'
 
 const jestExpect: jest.Expect = (global as any).expect
 
 if (jestExpect) {
-  jestExpect.extend({ toHaveHTTPStatus, toBeJSON, toBeText })
+  jestExpect.extend({ toBeObject, toBeArray, toBeEmpty, toHaveHTTPStatus, toBeJSON, toBeText })
 } else {
   throw new Error('Unable to find jest expect. Please install the jest module.')
 }
 
-// declare namespace jest {
-//   interface Matchers<R> {
-//     toHaveHTTPStatus(expected: number): R
-//     toBeJSON(): R
-//     toBeText(): R
-//   }
-// }
+export { toBeObject, toBeArray, toBeEmpty, toHaveHTTPStatus, toBeJSON, toBeText }

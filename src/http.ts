@@ -1,9 +1,8 @@
 import { Response } from 'got'
+import { ExpectResult } from './types'
 
-export function toHaveHTTPStatus(
-  res: Response<string | object>,
-  expected: number
-): { message: () => string; pass: boolean } {
+// TODO@PI: Handle not.to
+export function toHaveHTTPStatus(res: Response<string | object>, expected: number): ExpectResult {
   const received = res.statusCode
 
   return {
@@ -12,7 +11,8 @@ export function toHaveHTTPStatus(
   }
 }
 
-export function toBeJSON(res: Response<string | object>): { message: () => string; pass: boolean } {
+// TODO@PI: Handle not.to
+export function toBeJSON(res: Response<string | object>): ExpectResult {
   const received = res.headers['content-type']
 
   return {
@@ -21,11 +21,22 @@ export function toBeJSON(res: Response<string | object>): { message: () => strin
   }
 }
 
-export function toBeText(res: Response<string | object>): { message: () => string; pass: boolean } {
+// TODO@PI: Handle not.to
+export function toBeText(res: Response<string | object>): ExpectResult {
   const received = res.headers['content-type']
 
   return {
     message: () => `expected response to be text, but got ${JSON.stringify(received)} type instead`,
     pass: received ? received.startsWith('text/plain') : false
+  }
+}
+
+declare global {
+  namespace jest {
+    interface Matchers<R> {
+      toHaveHTTPStatus(expected: number): R
+      toBeJSON(): R
+      toBeText(): R
+    }
   }
 }
