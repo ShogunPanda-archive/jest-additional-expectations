@@ -36,10 +36,10 @@
     "jest": "^24.1.0"
   },
   "devDependencies": {
-    "@cowtech/tslint-config": "^5.12.4",
-    "@types/got": "^9.4.1",
-    "@types/jest": "^24.0.11",
-    "ts-jest": "^24.0.0",
-    "typescript": "^3.3.3333"
+    "@cowtech/tslint-config": "^5.13.0",
+    "@types/got": "^9.6.9",
+    "@types/jest": "^24.0.23",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.2"
   }
 }
