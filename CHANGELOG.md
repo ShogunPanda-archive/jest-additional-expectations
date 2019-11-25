@@ -1,3 +1,7 @@
+### 2019-11-25 / 0.3.0
+
+* fix: Update layout.
+
 ### 2019-03-09 / 0.2.0
 
 * feat: Handle negative cases.
