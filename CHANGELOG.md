@@ -1,3 +1,7 @@
+### 2019-11-25 / 0.4.0
+
+* chore: Rebranded outside of @cowtech.
+
 ### 2019-11-25 / 0.3.0
 
 * fix: Update layout.
