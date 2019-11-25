@@ -1,11 +1,25 @@
 # @cowtech/cera
 
-[![Package Version](https://img.shields.io/npm/v/@cowtech/cera.svg)](https://npmjs.com/package/@cowtech/cera)
-[![Dependency Status](https://img.shields.io/gemnasium/github.com/cowtech/cera.svg)](https://gemnasium.com/github.com/cowtech/cera)
+[![Package Version](https://img.shields.io/npm/v/@cowtech/cera)](https://npm.im/@cowtech/cera)
+[![Dependency Status](https://img.shields.io/david/cowtech/cera)](https://david-dm.org/cowtech/cera)
 
-CowTech HTTP utilities.
+CowTech Jest testing utilities.
 
 https://github.com/cowtech/cera
+
+## Exported methods
+
+### General
+
+- `expect(res).toBeObject()`
+- `expect(res).toBeArray()`
+- `expect(res).toBeEmpty()`
+
+### HTTP
+
+- `expect(res).toHaveHTTPStatus(200)` (shorthand for `expect(res.statusCode).toEqual(200)`)
+- `expect(res).toBeJSON()` (uses `res.headers['content-type']`)
+- `expect(res).toBeText()` (uses `res.headers['content-type']`)
 
 ## Contributing to cera
 
@@ -18,6 +32,6 @@ https://github.com/cowtech/cera
 
 ## Copyright
 
-Copyright (C) 2018 and above Shogun <shogun@cowtech.it>.
+Copyright (C) 2019 and above Shogun <shogun@cowtech.it>.
 
-Licensed under the MIT license, which can be found at https://choosealicense.com/licenses/mit.
+Licensed under the ISC license, which can be found at https://choosealicense.com/licenses/isc.
