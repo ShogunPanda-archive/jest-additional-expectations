@@ -1,11 +1,11 @@
-# cera
+# jest-additional-expectations
 
-[![Package Version](https://img.shields.io/npm/v/ShogunPanda/cera)](https://npm.imShogunPanda/cera)
-[![Dependency Status](https://img.shields.io/david/ShogunPanda/cera)](https://david-dm.org/ShogunPanda/cera)
+[![Package Version](https://img.shields.io/npm/v/ShogunPanda/jest-additional-expectations)](https://npm.imShogunPanda/jest-additional-expectations)
+[![Dependency Status](https://img.shields.io/david/ShogunPanda/jest-additional-expectations)](https://david-dm.org/ShogunPanda/jest-additional-expectations)
 
 Jest testing utilities.
 
-https://github.com/cowtech/cera
+https://github.com/cowtech/jest-additional-expectations
 
 ## Exported methods
 
@@ -21,7 +21,7 @@ https://github.com/cowtech/cera
 - `expect(res).toBeJSON()` (uses `res.headers['content-type']`)
 - `expect(res).toBeText()` (uses `res.headers['content-type']`)
 
-## Contributing to cera
+## Contributing to jest-additional-expectations
 
 - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 - Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.

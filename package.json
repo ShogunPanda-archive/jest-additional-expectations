@@ -1,15 +1,15 @@
 {
-  "name": "cera",
-  "version": "0.3.0",
-  "description": "CowTech Testing utilities.",
-  "homepage": "https://sw.cowtech.it/cera",
-  "repository": "github:ShogunPanda/cera",
+  "name": "jest-additional-expectations",
+  "version": "0.1.0",
+  "description": "Jest additional expectations.",
+  "homepage": "https://sw.cowtech.it/jest-additional-expectations",
+  "repository": "github:ShogunPanda/jest-additional-expectations",
   "keywords": [
     "jest",
     "jest-plugin"
   ],
   "bugs": {
-    "url": "https://github.com/ShogunPanda/cera/issues"
+    "url": "https://github.com/ShogunPanda/jest-additional-expectations/issues"
   },
   "author": "Shogun <shogun@cowtech.it>",
   "license": "ISC",
