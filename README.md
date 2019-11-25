@@ -1,9 +1,9 @@
-# @cowtech/cera
+# cera
 
-[![Package Version](https://img.shields.io/npm/v/@cowtech/cera)](https://npm.im/@cowtech/cera)
-[![Dependency Status](https://img.shields.io/david/cowtech/cera)](https://david-dm.org/cowtech/cera)
+[![Package Version](https://img.shields.io/npm/v/ShogunPanda/cera)](https://npm.imShogunPanda/cera)
+[![Dependency Status](https://img.shields.io/david/ShogunPanda/cera)](https://david-dm.org/ShogunPanda/cera)
 
-CowTech Jest testing utilities.
+Jest testing utilities.
 
 https://github.com/cowtech/cera
 
