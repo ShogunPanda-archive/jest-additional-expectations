@@ -1,3 +1,11 @@
+### 2019-11-26 / 0.4.1
+
+* chore: Add tests.
+* chore: Fixed readme.
+* chore: Fixed readme.
+* chore: Renamed to jest-additional-expectations.
+* chore: Updated dependencies.
+
 ### 2019-11-25 / 0.3.0
 
 * fix: Update layout.
