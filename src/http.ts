@@ -1,7 +1,6 @@
 import { Response } from 'got'
 import { ExpectResult } from './types'
 
-// TODO@PI: Handle not.to
 export function toHaveHTTPStatus(res: Response<string | object>, expected: number): ExpectResult {
   const received = res.statusCode
 
@@ -18,7 +17,6 @@ export function toHaveHTTPStatus(res: Response<string | object>, expected: numbe
   }
 }
 
-// TODO@PI: Handle not.to
 export function toBeJSON(res: Response<string | object>): ExpectResult {
   const received = res.headers['content-type']
 
@@ -35,7 +33,6 @@ export function toBeJSON(res: Response<string | object>): ExpectResult {
   }
 }
 
-// TODO@PI: Handle not.to
 export function toBeText(res: Response<string | object>): ExpectResult {
   const received = res.headers['content-type']
 

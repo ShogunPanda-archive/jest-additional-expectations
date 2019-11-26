@@ -2,6 +2,8 @@
 
 [![Package Version](https://img.shields.io/npm/v/jest-additional-expectations)](https://npm.im/jest-additional-expectations)
 [![Dependency Status](https://img.shields.io/david/ShogunPanda/jest-additional-expectations)](https://david-dm.org/ShogunPanda/jest-additional-expectations)
+[![Build](https://github.com/ShogunPanda/jest-additional-expectations/workflows/CI/badge.svg)](https://github.com/ShogunPanda/jest-additional-expectations/actions?query=workflow%3ACI)
+[![Code Coverage](https://img.shields.io/codecov/c/gh/ShogunPanda/jest-additional-expectations?token=d0ae1643f35c4c4f9714a357f796d05d)](https://codecov.io/gh/ShogunPanda/jest-additional-expectations)
 
 Jest testing utilities.
 
