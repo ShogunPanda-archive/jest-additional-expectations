@@ -1,3 +1,7 @@
+### 2019-11-26 / 0.4.2
+
+* chore: Added missing file.
+
 ### 2019-11-26 / 0.4.1
 
 * chore: Add tests.
