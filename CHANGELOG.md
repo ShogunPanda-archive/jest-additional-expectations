@@ -1,3 +1,7 @@
+### 2019-11-26 / 0.4.3
+
+* chore: Include coverage in CI command.
+
 ### 2019-11-26 / 0.4.2
 
 * chore: Added missing file.
