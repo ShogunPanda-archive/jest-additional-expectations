@@ -1,3 +1,7 @@
+### 2019-12-19 / 0.4.4
+
+- chore(docs): Fixed readme link.
+
 ### 2019-11-26 / 0.4.3
 
 - chore: Include coverage in CI command.
