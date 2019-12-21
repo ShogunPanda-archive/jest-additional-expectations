@@ -1,7 +1,13 @@
-import { Response } from 'got'
+import { IncomingHttpHeaders } from 'http'
 import { ExpectResult } from './types'
 
-export function toHaveHTTPStatus(res: Response<string | object>, expected: number): ExpectResult {
+export interface HTTPResponse<Body = object> {
+  statusCode: number
+  headers: IncomingHttpHeaders
+  body: Body
+}
+
+export function toHaveHTTPStatus(res: HTTPResponse, expected: number): ExpectResult {
   const received = res.statusCode
 
   if (received === expected) {
@@ -17,7 +23,7 @@ export function toHaveHTTPStatus(res: Response<string | object>, expected: numbe
   }
 }
 
-export function toBeJSON(res: Response<string | object>): ExpectResult {
+export function toBeJSON(res: HTTPResponse): ExpectResult {
   const received = res.headers['content-type']
 
   if (received && received.startsWith('application/json')) {
@@ -33,7 +39,7 @@ export function toBeJSON(res: Response<string | object>): ExpectResult {
   }
 }
 
-export function toBeText(res: Response<string | object>): ExpectResult {
+export function toBeText(res: HTTPResponse): ExpectResult {
   const received = res.headers['content-type']
 
   if (received && received.startsWith('text/plain')) {
