@@ -1,3 +1,7 @@
+### 2019-12-21 / 0.6.0
+
+- chore: Include new types.
+
 ### 2019-12-21 / 0.5.0
 
 - feat: Added HTTPResponse interface.
