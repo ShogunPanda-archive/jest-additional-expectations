@@ -1,3 +1,7 @@
+### 2019-12-21 / 0.5.0
+
+- feat: Added HTTPResponse interface.
+
 ### 2019-12-19 / 0.4.4
 
 - chore(docs): Fixed readme link.
