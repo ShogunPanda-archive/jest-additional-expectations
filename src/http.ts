@@ -1,11 +1,4 @@
-import { IncomingHttpHeaders } from 'http'
-import { ExpectResult } from './types'
-
-export interface HTTPResponse<Body = object> {
-  statusCode: number
-  headers: IncomingHttpHeaders
-  body: Body
-}
+import { ExpectResult, HTTPResponse } from './types'
 
 export function toHaveHTTPStatus(res: HTTPResponse, expected: number): ExpectResult {
   const received = res.statusCode

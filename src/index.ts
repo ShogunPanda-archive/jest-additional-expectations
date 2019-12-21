@@ -11,4 +11,5 @@ function install(jestExpect?: jest.Expect): void {
 
 install((global as any).expect)
 
+export * from './types'
 export { install, toBeObject, toBeArray, toBeEmpty, toHaveHTTPStatus, toBeJSON, toBeText }
