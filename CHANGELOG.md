@@ -1,3 +1,7 @@
+### 2021-01-02 / 0.7.0
+
+- chore: Updated dependencies, code and tools.
+
 ### 2019-12-21 / 0.6.0
 
 - chore: Include new types.
