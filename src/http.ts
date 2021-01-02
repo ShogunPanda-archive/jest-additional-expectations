@@ -19,7 +19,7 @@ export function toHaveHTTPStatus(res: HTTPResponse, expected: number): ExpectRes
 export function toBeJSON(res: HTTPResponse): ExpectResult {
   const received = res.headers['content-type']
 
-  if (received && received.startsWith('application/json')) {
+  if (received?.startsWith('application/json')) {
     return {
       message: () => 'expected response not to be JSON',
       pass: true
@@ -35,7 +35,7 @@ export function toBeJSON(res: HTTPResponse): ExpectResult {
 export function toBeText(res: HTTPResponse): ExpectResult {
   const received = res.headers['content-type']
 
-  if (received && received.startsWith('text/plain')) {
+  if (received?.startsWith('text/plain')) {
     return {
       message: () => 'expected response not to be text',
       pass: true
@@ -49,11 +49,12 @@ export function toBeText(res: HTTPResponse): ExpectResult {
 }
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace jest {
     interface Matchers<R> {
-      toHaveHTTPStatus(expected: number): R
-      toBeJSON(): R
-      toBeText(): R
+      toHaveHTTPStatus: (expected: number) => R
+      toBeJSON: () => R
+      toBeText: () => R
     }
   }
 }

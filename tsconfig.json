@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es2019",
     "module": "commonjs",
     "moduleResolution": "node",
     "jsx": "preserve",
@@ -14,12 +14,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strictNullChecks": true,
-    "declaration": true,
-    "baseUrl": ".",
-    "paths": {
-      "jest": ["@types/jest"]
-    }
+    "declaration": true
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/*.ts"],
   "exclude": []
 }

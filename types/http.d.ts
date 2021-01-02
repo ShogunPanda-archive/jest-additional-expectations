@@ -5,9 +5,9 @@ export declare function toBeText(res: HTTPResponse): ExpectResult;
 declare global {
     namespace jest {
         interface Matchers<R> {
-            toHaveHTTPStatus(expected: number): R;
-            toBeJSON(): R;
-            toBeText(): R;
+            toHaveHTTPStatus: (expected: number) => R;
+            toBeJSON: () => R;
+            toBeText: () => R;
         }
     }
 }

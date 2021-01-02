@@ -56,11 +56,12 @@ export function toBeEmpty(target: any): ExpectResult {
 }
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace jest {
     interface Matchers<R> {
-      toBeObject(): R
-      toBeArray(): R
-      toBeEmpty(): R
+      toBeObject: () => R
+      toBeArray: () => R
+      toBeEmpty: () => R
     }
   }
 }
