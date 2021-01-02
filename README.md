@@ -7,7 +7,7 @@
 
 Jest testing utilities.
 
-https://github.com/ShogunPanda/jest-additional-expectations
+https://sw.cowtech.it/jest-additional-expectations
 
 ## Exported methods
 
