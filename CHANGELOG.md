@@ -1,3 +1,7 @@
+### 2021-01-02 / 0.7.1
+
+- chore: Fixed readme.
+
 ### 2021-01-02 / 0.7.0
 
 - chore: Updated dependencies, code and tools.
