@@ -1,3 +1,7 @@
+### 2021-01-03 / 0.7.2
+
+- chore: Updated linter config.
+
 ### 2021-01-02 / 0.7.1
 
 - chore: Fixed readme.
