@@ -9,7 +9,7 @@ export function install(jestExpect?: jest.Expect): void {
   jestExpect.extend({ toBeObject, toBeArray, toBeEmpty, toHaveHTTPStatus, toBeJSON, toBeText })
 }
 
-install((global as any).expect)
+install((globalThis as any).expect)
 
 export * from './general'
 export * from './http'

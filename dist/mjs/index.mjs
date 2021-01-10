@@ -6,7 +6,7 @@ export function install(jestExpect) {
     }
     jestExpect.extend({ toBeObject, toBeArray, toBeEmpty, toHaveHTTPStatus, toBeJSON, toBeText });
 }
-install(global.expect);
+install(globalThis.expect);
 export * from "./general.mjs";
 export * from "./http.mjs";
 export * from "./types.mjs";

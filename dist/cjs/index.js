@@ -20,7 +20,7 @@ function install(jestExpect) {
     jestExpect.extend({ toBeObject: general_1.toBeObject, toBeArray: general_1.toBeArray, toBeEmpty: general_1.toBeEmpty, toHaveHTTPStatus: http_1.toHaveHTTPStatus, toBeJSON: http_1.toBeJSON, toBeText: http_1.toBeText });
 }
 exports.install = install;
-install(global.expect);
+install(globalThis.expect);
 __exportStar(require("./general"), exports);
 __exportStar(require("./http"), exports);
 __exportStar(require("./types"), exports);
