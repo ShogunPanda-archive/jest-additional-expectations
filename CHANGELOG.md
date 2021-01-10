@@ -1,3 +1,8 @@
+### 2021-01-10 / 0.8.1
+
+- chore: Use globalThis instead of global.
+- chore: Fine tuned build script.
+
 ### 2021-01-04 / 0.8.0
 
 - feat: Export as ESM.
