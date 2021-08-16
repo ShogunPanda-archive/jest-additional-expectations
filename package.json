@@ -21,37 +21,36 @@
     "LICENSE.md",
     "README.md"
   ],
-  "main": "dist/cjs/index.js",
-  "exports": {
-    "require": "./dist/cjs/index.js",
-    "import": "./dist/mjs/index.mjs"
-  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
   "typings": "types/index.d.ts",
   "types": "types/index.d.ts",
   "scripts": {
-    "lint": "eslint src/*.ts test/*.ts",
+    "prebuild": "rm -rf dist types && npm run lint",
+    "build": "tsc -p . && esm-pkg-add-imports-extensions dist",
+    "format": "prettier -w src test",
+    "lint": "eslint src test",
     "test": "jest test --verbose --coverage --coverageReporters=html --coverageReporters=text",
     "test:ci": "jest --coverage --coverageThreshold='{\"global\":{\"branches\":90,\"functions\":90,\"lines\":90,\"statements\":90}}' --ci --coverageReporters=json",
-    "ci": "yarn lint && yarn test:ci",
-    "prebuild": "rm -rf dist types && yarn lint",
-    "build": "tsc -p . && tsc -p tsconfig.modules.json && renamer --find js --replace mjs dist/mjs/* >> /dev/null && jscodeshift -s --extensions=mjs -t node_modules/@cowtech/esm-package-utils dist/mjs/**",
-    "prepublishOnly": "yarn ci",
+    "ci": "npm run lint && npm run test:ci",
+    "prepublishOnly": "npm run ci",
     "postpublish": "git push origin && git push origin -f --tags"
   },
   "dependencies": {
-    "jest": "^26.6.3"
+    "jest": "^27.0.6"
   },
   "devDependencies": {
-    "@cowtech/eslint-config": "^7.14.0",
-    "@cowtech/esm-package-utils": "^0.2.0",
-    "@types/jest": "^26.0.19",
-    "@types/node": "^14.14.19",
-    "prettier": "^2.2.1",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.4"
+    "@cowtech/eslint-config": "^7.14.5",
+    "@cowtech/esm-package-utils": "^0.9.0",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.6.1",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.2.4"
   },
   "engines": {
-    "node": ">=12.15.0"
+    "node": ">=14.15.0"
   },
   "jest": {
     "preset": "ts-jest",
