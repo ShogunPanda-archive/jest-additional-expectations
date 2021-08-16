@@ -1,6 +1,6 @@
 {
   "name": "jest-additional-expectations",
-  "version": "0.8.1",
+  "version": "1.0.0-beta.0",
   "description": "Jest additional expectations.",
   "homepage": "https://sw.cowtech.it/jest-additional-expectations",
   "repository": "github:ShogunPanda/jest-additional-expectations",
