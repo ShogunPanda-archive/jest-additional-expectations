@@ -1,3 +1,7 @@
+### 2021-08-16 / 1.0.0-beta.0
+
+- feat: Only export as ESM.
+
 ### 2021-01-10 / 0.8.1
 
 - chore: Use globalThis instead of global.
