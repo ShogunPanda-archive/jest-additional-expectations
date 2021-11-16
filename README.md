@@ -23,6 +23,12 @@ https://sw.cowtech.it/jest-additional-expectations
 - `expect(res).toBeJSON()` (uses `res.headers['content-type']`)
 - `expect(res).toBeText()` (uses `res.headers['content-type']`)
 
+## ESM Only
+
+This package only supports to be directly imported in a ESM context.
+
+For informations on how to use it in a CommonJS context, please check [this page](https://gist.github.com/ShogunPanda/fe98fd23d77cdfb918010dbc42f4504d).
+
 ## Contributing to jest-additional-expectations
 
 - Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
