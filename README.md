@@ -1,5 +1,7 @@
 # jest-additional-expectations
 
+## END OF DEVELOPMENT NOTICE - This package has been discontinued
+
 [![Version](https://img.shields.io/npm/v/jest-additional-expectations.svg)](https://npm.im/jest-additional-expectations)
 [![Dependencies](https://img.shields.io/librariesio/release/npm/jest-additional-expectations)](https://libraries.io/npm/jest-additional-expectations)
 [![Build](https://github.com/ShogunPanda/jest-additional-expectations/workflows/CI/badge.svg)](https://github.com/ShogunPanda/jest-additional-expectations/actions?query=workflow%3ACI)
